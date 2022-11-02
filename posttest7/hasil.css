@@ -1,0 +1,334 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url(pictures/wall.jpeg)
+}
+
+.wraper {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    padding: 3px 25px;
+    background-color: rgb(104, 72, 44);
+    border: none;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5em;
+    padding: 15px;
+    width: 100%;
+    text-transform: capitalize;
+    background-color:#333;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: #f5f5f5;
+}
+
+.nav_links li a:hover {
+    color: #426d78;
+}   
+
+li, a, button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+
+.container{
+    Padding: 10px 20px 30px 40px;
+    Margin: 10px 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 90px;
+    border: none;
+    background-color:#333;
+}
+
+
+.content-me {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    background-color: rgb(104, 72, 44);
+    border-radius: 90px;
+    margin-top: 30px;
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
+    color: aliceblue;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.nav_search{
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: -70px;
+}
+.tambah{
+    padding: 8px 8px 8px 8px;
+    margin-right: 20px;
+    border-radius: 90px;
+    background-color: rgb(104, 72, 44);   
+}
+.cari1 {
+    font-family:monospace;
+    color:#f5f5f5;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    height: 30px;
+    background-color: rgb(104, 72, 44);
+    border-radius: 90px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.cari1 placeholder{
+    color: antiquewhite;
+}
+.cari1 input{
+    color: antiquewhite;
+}
+
+.content {  
+    text-align: center;
+    font-size: 15px;
+    align-items: center;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.tabel{
+    background-color: #333;
+    border-collapse: collapse;
+    border: antiquewhite;
+    margin: 20px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabel tr th {
+    background-color: rgb(104, 72, 44);
+}
+.tabel tr td{
+    border-bottom: rgb(104, 72, 44) 10px;
+}
+.data {
+    color: antiquewhite;
+}
+
+.footer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-me {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    height: 150px;
+    background-color: #333;
+}
+
+.image {
+    padding: 5px 5px;
+    background-color: rgb(104, 72, 44);
+    border: none;
+    border-radius: 90px;
+    cursor: pointer;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-owner {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-size:medium;
+    color: #f5f5f5;
+}
+
+.footer-copyright {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(104, 72, 44);
+    color:aliceblue;
+    font-size: small;
+    line-height: 50px;
+}
+
+.footer-me1{
+    list-style: none;
+}
+
+.footer-me1 li{
+    padding: 10px;
+}
+
+.footer-me1 li a {
+    color: #f5f5f5;
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.footer-me1  li  a:hover {
+    color: #3b475b;
+    transition: all .2s ease-in-out;
+}
+
+.footer button{
+    margin: 40px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+}
+
+.footer button.gelap {
+    display: none;
+    background-color: rgb(163, 94, 10)
+}
+
+.footer button.terang {
+    background-color: rgb(104, 72, 44);
+    color: #f5f5f5;
+}
+/* Efek Terang */
+body.terang {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url(pictures/wall_light.jpeg)
+}
+
+.terang .wraper{
+    background-color: rgb(214, 189, 141);
+    box-shadow: 0 5px 5px 0px rgba(63, 31, 4, 0.5);
+}
+.terang .logo{
+    background-color: rgb(163, 94, 10);
+}
+.terang .nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: #333;
+}
+.terang .content-me {
+    background-color: rgb(163, 94, 10);
+    color: aliceblue;
+}
+.terang .content {  
+    color: #333;
+}
+.terang .main-content {
+    background-color:rgb(214, 189, 141);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.terang .tambah{
+    background-color: rgb(163, 94, 10);   
+}
+
+.terang .cari1 {
+    color: #f5f5f5;
+    background-color: rgb(163, 94, 10);
+ 
+}
+
+.terang .text_hasil {
+    color: #f5f5f5;
+    background-color: rgb(163, 94, 10);
+}
+.terang .data {
+    color: #333;
+}
+.terang .image {
+    background-color: rgb(163, 94, 10);
+}
+.terang .footer-me {
+    background-color: rgb(214, 189, 141);
+}
+
+.terang .footer-owner {
+    color: #333
+}
+
+.terang .footer-copyright {
+    background-color: rgb(163, 94, 10);
+    color:aliceblue;
+
+}
+
+.terang .footer-me1 li a {
+    color: #333;
+}
+
+.terang .footer button.gelap {
+    display: inline;
+}
+
+.terang .footer button.terang {
+    display: none;
+}
+
+.terang .tabel{
+    background-color: rgb(214, 189, 141);
+    color: #333;
+}
+
+.terang .tabel tr th {
+    background-color: rgb(163, 94, 10);
+    color: aliceblue;
+}

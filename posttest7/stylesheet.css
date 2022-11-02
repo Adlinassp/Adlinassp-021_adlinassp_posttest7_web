@@ -1,0 +1,599 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url(pictures/wall.jpeg);   
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: last baseline;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.wraper {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    align-items: center;
+    padding: 10px;
+    width: 130%;
+    height: 70px;
+    background-color: #333;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+}
+
+.logo{
+    padding: 3px 25px;
+    background-color: rgb(104, 72, 44);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: #f5f5f5;
+}
+
+.nav_links li a:hover {
+    color: #426d78;
+}   
+
+li, a, button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+button.contact{
+    align-self:right;
+    padding: 10px 25px;
+    background-color: rgb(104, 72, 44);
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(63, 52, 52);
+}
+
+/*Main Content*/
+main{
+    margin: 30px 155px;
+    padding: 70px 100px;
+    background-color: #333;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.main-content{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border: none;
+}
+
+.content-img img {
+    width: 80%;
+    border: none;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 90px;
+}
+
+.main-text {
+    padding-top: 10px;
+    padding-left: 30px;
+    font-family:'Courier New', Courier, monospace;
+    color:antiquewhite;
+}
+
+.sub-content{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-style: italic;
+    color:#f5f5f5;
+    
+}
+
+.sec-content{
+    height: 500px;
+    margin-top: 100px;
+}
+
+.sec-content-form{
+    height: 850px;
+    margin-top: 100px;
+}
+
+.sec-content h2 {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: antiquewhite;
+    font-weight: 200;
+    border-bottom: 2px solid rgb(104, 72, 44);
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+form{
+    text-align: center;
+    padding-top: 15px;
+    background-color: rgb(104, 72, 44);
+    border-radius: 50px;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.sec-content-form h2 {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: antiquewhite;
+    font-weight: 200;
+    border-bottom: 2px solid rgb(104, 72, 44);
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.formgrup,
+.formgrup1,
+.formgrup2,
+.formgrup3 {
+    font-family:monospace;
+    color: antiquewhite;
+    font-weight: 200;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+form, 
+input,
+textarea {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: inherit;
+}
+
+.formgrup label,
+.formgrup1 label,
+.formgrup2 label,
+.formgrup3 label{
+    display: block;
+    margin: 8px;
+}
+
+.formgrup1 input {
+    border-radius: 50px; 
+    width: 50%;
+    color:antiquewhite;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    outline: 0;
+    transition: border 0.15s; 
+    background-color: #333;
+}
+
+.formgrup2 input {
+    border-radius: 50px;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    outline: 0;
+    color: antiquewhite;
+    transition: border 0.15s;  
+    background-color: #333;
+}
+
+.formgrup3 input {
+    border-radius: 50px;
+    border: #333;
+}
+
+
+/* 
+
+.formgrup input [type = "text"],
+.formgrup input [type = "number"],
+.formgrup textarea {
+    width: 100%;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    outline: 0;
+    transition: border 0.15s;
+}
+
+.formgrup input [type = "text"],
+.formgrup input [type = "number"] {
+    height: 4.6rem;
+}
+
+.formgrup textarea {
+    resize: vertical;
+} */
+
+.submit {
+    background: #333;
+    color: antiquewhite;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.submit:hover {
+    background: antiquewhite;
+    color: rgb(104, 72, 44);
+}
+
+/* .formgrup input:focus,
+.formgrup1 input:focus,
+.formgrup2 input:focus{
+    border: 1px solid antiquewhite;
+} */
+
+
+
+.section-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+.card {
+    background-color: rgb(104, 72, 44);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+}
+
+.card_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-details{
+    padding: 10px 0;
+}
+.card-details ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px 0;
+}
+
+.card-details ul li{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 12px 0;
+}
+
+.card-details ul li:not(:last-child) {
+    border-bottom: 1px solid #3b475b;
+}
+
+.btn1 {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: antiquewhite;
+    background-color: #333;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 100px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 30px;
+}
+
+.button2 {
+    margin-left: 500px;
+    padding: 10px 25px;
+    background-color: rgb(104, 72, 44);
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(6, 4, 0, 0.607);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup_content {
+    width: 50%;
+    background-color: #333;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-58%, -58%);
+    opacity: 0;
+}
+
+.popup_img{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.popup_img img{
+    display: block;
+    width: 33.333%;
+}
+
+.popup_header {
+    text-align: center;
+    text-transform: uppercase;
+    color: antiquewhite;
+    margin-bottom: 36px;
+}
+
+.popup_header h1{
+    font-size: 30px;
+    margin: 20px;
+}
+
+.popup_header h2{
+    font-size: 20px;
+}
+
+.popup_text p:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.popup_btn {
+    background-color: rgb(94, 86, 76);
+    margin-top: 30px;
+}
+
+#popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup:target .popup_content {
+    opacity: 1;
+}
+
+
+.footer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-me {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    height: 150px;
+    background-color: #333;
+}
+
+.image {
+    padding: 5px 5px;
+    background-color: rgb(104, 72, 44);
+    border: none;
+    border-radius: 90px;
+    cursor: pointer;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-owner {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-size:medium;
+    color: #f5f5f5;
+}
+
+.footer-copyright {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(104, 72, 44);
+    color:aliceblue;
+    font-size: small;
+    line-height: 50px;
+}
+
+.footer-me1{
+    list-style: none;
+}
+
+.footer-me1 li{
+    padding: 10px;
+}
+
+.footer-me1 li a {
+    color: #f5f5f5;
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.footer-me1  li  a:hover {
+    color: #3b475b;
+    transition: all .2s ease-in-out;
+}
+
+.footer button{
+    margin: 40px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+}
+
+.footer button.gelap {
+    display: none;
+    background-color: rgb(163, 94, 10)
+}
+
+.footer button.terang {
+    background-color: rgb(104, 72, 44);
+    color: #f5f5f5;
+}
+
+/* Efek Terang */
+body.terang{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url(pictures/wall_light.jpeg);
+
+}
+
+.terang .wraper{
+    background-color: rgb(214, 189, 141);
+    box-shadow: 0 5px 5px 0px rgba(63, 31, 4, 0.5);
+}
+
+.terang .logo{
+    background-color: rgb(163, 94, 10);
+}
+
+.terang .nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: #333;
+}
+
+.terang .contact{
+    background-color: rgb(163, 94, 10);
+}
+
+.terang main{
+    background-color: rgb(214, 189, 141);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.terang .main-text {
+    color:#333;
+}
+
+.terang .sub-content{
+    color:rgb(15, 12, 12);
+    
+}
+.terang .button2 {
+    background-color: rgb(163, 94, 10);
+}
+
+.terang .image {
+    background-color: rgb(163, 94, 10);
+}
+
+.terang .footer-me {
+    background-color: rgb(214, 189, 141);
+}
+
+.terang .footer-owner {
+    color: #333
+}
+
+.terang .footer-copyright {
+    background-color: rgb(163, 94, 10);
+    color:aliceblue;
+
+}
+
+.terang .footer-me1 li a {
+    color: #333;
+}
+
+.terang .footer button.gelap {
+    display: inline;
+}
+
+.terang .footer button.terang {
+    display: none;
+}
+
+.terang .sec-content h2 {
+    color: #333;
+    border-bottom: 2px solid rgb(163, 94, 10);
+}
+
+.terang .card {
+    background-color: rgb(163, 94, 10);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.terang .btn1 {
+    color: #333;
+    background-color: rgb(214, 189, 141);
+}
+
+.terang form{
+    background-color: rgb(163, 94, 10);
+}
+.terang .sec-content-form h2 {
+    color: #333;
+    border-bottom: 2px solid rgb(163, 94, 10);
+}
+.terang .formgrup1 input {
+    color:#333;
+    background-color: rgb(214, 189, 141);
+}
+.terang .formgrup2 input {
+    color: #333;
+    background-color: rgb(214, 189, 141);
+}
+
+.terang .formgrup3 input {
+    border-radius: 50px;
+    border: rgb(214, 189, 141);
+}
+
+.terang .submit {
+    background: rgb(214, 189, 141);
+    color: rgb(163, 94, 10);
+}
+.terang .submit:hover {
+    background: #333;
+    color:antiquewhite;
+}
